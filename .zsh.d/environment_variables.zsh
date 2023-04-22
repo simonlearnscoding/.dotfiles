@@ -11,7 +11,7 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 export FZF_TMUX=1
 export FZF_TMUX_OPTS='-p 80%'
 export GOOGLE_APPLICATION_CREDENTIALS="/home/simone/tts-api.json"
-
+export EDITOR="/usr/bin/nvim"
 export GPG_TTY=$TTY
 eval "$(zoxide init bash)"
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus

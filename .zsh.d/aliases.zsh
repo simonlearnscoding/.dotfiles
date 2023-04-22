@@ -1,7 +1,7 @@
 
 # Define aliases.
-alias l="exa --icons -a --group-directories-first --icons"
-alias ls="l"
+alias l="exa --icons  --group-directories-first --icons"
+alias ls="exa --icons -a --group-directories-first --icons"
 alias tree='tree -a -I .git'
 alias lpg='lp -o Ink=MONO'
 alias cl="tmux kill-pane"
