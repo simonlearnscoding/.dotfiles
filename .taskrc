@@ -1,0 +1,82 @@
+# [Created by task 2.6.1 4/14/2023 12:15:31]
+# Taskwarrior program configuration file.
+# For more documentation, see https://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# You can also refence environment variables:
+#   variable=$HOME/task
+#   variable=$VALUE
+
+# Use the command 'task show' to see all defaults and overrides
+# report.next.columns= id, description
+# report.next.columns=description,id.due.relative,project,tags
+# Files
+data.location=/home/simone/.task
+
+# To use the default location of the XDG directories,
+# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
+
+#data.location=~/.local/share/task
+hooks.location=~/.task/hooks
+
+# Color theme (uncomment one to use)
+#include light-16.theme
+#include light-256.theme
+include dark-16.theme
+# include dark-256.theme
+#include dark-red-256.theme
+#include dark-green-256.theme
+#include dark-blue-256.theme
+#include dark-violets-256.theme
+#include dark-yellow-green.theme
+#include dark-gray-256.theme
+#include dark-gray-blue-256.theme
+# include solarized-dark-256.theme
+#include solarized-light-256.theme
+#include no-color.theme
+
+
+urgency.uda.priority.L.coefficient=-2.0
+
+# By default, the week starts on Sunday, let's fix that.
+weekstart=monday
+
+# Make searches case insensitive, personal preference
+search.case.sensitive=no
+
+# Daily burndown
+alias.burndown=burndown.daily
+
+active.indicator=>
+
+# Sort the columns a little differently
+report.list.columns=id,description,project,priority,due,entry.age
+
+
+report.list.labels= ID, Description, Project, Pri,Due,Age
+
+list.all.projects=no
+#undo.style=diff
+default.command=list
+
+
+
+
+context.discord.read=+code +discord
+context.discord.write=+code +discord
+
+# report.task.columns=id,project,description,tags,urgency
+#
+
+news.version=2.6.0
+context.today.read=+today or +TODAY
+taskd.certificate=\/home\/simone\/.task\/first.cert.pem
+taskd.key=\/home\/simone\/.task\/first.key.pem
+taskd.ca=\/home\/simone\/.task\/ca.cert.pem
+taskd.server=pop-os.localdomain:53589
+taskd.credentials=Public\/First\/e961fd7c-0bba-4e85-952d-9340c227295f

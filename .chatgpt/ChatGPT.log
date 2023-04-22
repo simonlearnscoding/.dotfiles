@@ -1,0 +1,266 @@
+[2023-03-29][15:01:56][chatgpt::app::setup][INFO] stepup
+[2023-03-29][15:01:56][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-29][15:01:56][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-29][15:01:56][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-29][15:01:56][chatgpt::app::setup][INFO] run_check_update
+[2023-03-29][15:01:56][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-29][15:01:56][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-29][15:01:56][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-29][15:01:56][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-03-29][15:01:56][attohttpc][DEBUG] failed to connect to [2606:50c0:8000::153]:443: Network is unreachable (os error 101)
+[2023-03-29][15:01:56][attohttpc][DEBUG] trying to connect to 185.199.108.153:443
+[2023-03-29][15:01:56][attohttpc][DEBUG] successfully connected to 185.199.108.153:443, took 37ms
+[2023-03-29][15:01:56][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-29][15:01:56][attohttpc][DEBUG] creating a length body reader
+[2023-03-29][15:01:56][attohttpc][DEBUG] creating gzip decoder
+[2023-03-29][15:01:56][attohttpc][DEBUG] status code 200
+[2023-03-29][20:52:48][chatgpt::app::setup][INFO] stepup
+[2023-03-29][20:52:48][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-29][20:52:48][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-29][20:52:48][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-29][20:52:48][chatgpt::app::setup][INFO] run_check_update
+[2023-03-29][20:52:48][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-29][20:52:48][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-29][20:52:48][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-29][20:52:48][attohttpc][DEBUG] trying to connect to [2606:50c0:8001::153]:443
+[2023-03-29][20:52:48][attohttpc][DEBUG] failed to connect to [2606:50c0:8001::153]:443: Network is unreachable (os error 101)
+[2023-03-29][20:52:48][attohttpc][DEBUG] trying to connect to 185.199.108.153:443
+[2023-03-29][20:52:48][attohttpc][DEBUG] successfully connected to 185.199.108.153:443, took 28ms
+[2023-03-29][20:52:48][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-29][20:52:48][attohttpc][DEBUG] creating a length body reader
+[2023-03-29][20:52:48][attohttpc][DEBUG] creating gzip decoder
+[2023-03-29][20:52:48][attohttpc][DEBUG] status code 200
+[2023-03-29][21:00:11][chatgpt::app::window][INFO] dalle2_query: Some("Interface%3A%20An%20interface%20in%20TypeScript%20is%20a%20way%20to%20define%20the%20shape%20of%20an%20object%2C%20specifying%20the%20properties%20it%20should%20have%20and%20their%20types.%20Interfaces%20can%20also%20be%20used%20to%20define%20the%20contract%20for%20a%20class%2C%20i.e.%2C%20the%20methods%20and%20properties%20it%20should%20implement.%20Interfaces%20themselves%20do%20not%20contain%20any%20implementation%2C%20and%20they%20do%20not%20produce%20any%20JavaScript%20code%20when%20compiled.")
+[2023-03-29][21:26:50][chatgpt::app::window][INFO] dalle2_query: Some("is")
+[2023-03-29][21:36:55][chatgpt::app::window][INFO] dalle2_query: Some("Here's%20what%20this%20type%20definition%20means%3A%0A%0Aexport%3A%20This%20keyword%20indicates%20that%20the%20InputValues%20type%20can%20be%20imported%20and%20used%20in%20other%20TypeScript%20files.%0Atype%3A%20This%20keyword%20is%20used%20to%20define%20a%20custom%20type.")
+[2023-03-30][08:45:11][chatgpt::app::setup][INFO] stepup
+[2023-03-30][08:45:11][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-30][08:45:11][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-30][08:45:11][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-30][08:45:11][chatgpt::app::setup][INFO] run_check_update
+[2023-03-30][08:45:11][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-30][08:45:11][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-30][08:45:11][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-30][08:45:11][attohttpc][DEBUG] trying to connect to [2606:50c0:8001::153]:443
+[2023-03-30][08:45:11][attohttpc][DEBUG] failed to connect to [2606:50c0:8001::153]:443: Network is unreachable (os error 101)
+[2023-03-30][08:45:11][attohttpc][DEBUG] trying to connect to 185.199.108.153:443
+[2023-03-30][08:45:11][attohttpc][DEBUG] successfully connected to 185.199.108.153:443, took 32ms
+[2023-03-30][08:45:11][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-30][08:45:11][attohttpc][DEBUG] creating a length body reader
+[2023-03-30][08:45:11][attohttpc][DEBUG] creating gzip decoder
+[2023-03-30][08:45:11][attohttpc][DEBUG] status code 200
+[2023-03-30][08:50:59][chatgpt::app::setup][INFO] stepup
+[2023-03-30][08:50:59][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-30][08:50:59][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-30][08:50:59][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-30][08:50:59][chatgpt::app::setup][INFO] run_check_update
+[2023-03-30][08:50:59][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-30][08:50:59][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-30][08:50:59][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-30][08:50:59][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-03-30][08:50:59][attohttpc][DEBUG] failed to connect to [2606:50c0:8000::153]:443: Network is unreachable (os error 101)
+[2023-03-30][08:50:59][attohttpc][DEBUG] trying to connect to 185.199.109.153:443
+[2023-03-30][08:50:59][attohttpc][DEBUG] successfully connected to 185.199.109.153:443, took 33ms
+[2023-03-30][08:51:00][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-30][08:51:00][attohttpc][DEBUG] creating a length body reader
+[2023-03-30][08:51:00][attohttpc][DEBUG] creating gzip decoder
+[2023-03-30][08:51:00][attohttpc][DEBUG] status code 200
+[2023-03-30][12:14:45][chatgpt::app::setup][INFO] stepup
+[2023-03-30][12:14:45][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-30][12:14:45][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-30][12:14:45][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-30][12:14:45][chatgpt::app::setup][INFO] run_check_update
+[2023-03-30][12:14:45][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-30][12:14:45][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-30][12:14:45][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-30][12:14:46][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-03-30][12:14:46][attohttpc][DEBUG] failed to connect to [2606:50c0:8000::153]:443: Network is unreachable (os error 101)
+[2023-03-30][12:14:46][attohttpc][DEBUG] trying to connect to 185.199.108.153:443
+[2023-03-30][12:14:46][attohttpc][DEBUG] successfully connected to 185.199.108.153:443, took 33ms
+[2023-03-30][12:14:46][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-30][12:14:46][attohttpc][DEBUG] creating a length body reader
+[2023-03-30][12:14:46][attohttpc][DEBUG] creating gzip decoder
+[2023-03-30][12:14:46][attohttpc][DEBUG] status code 200
+[2023-03-30][17:27:54][chatgpt::app::setup][INFO] stepup
+[2023-03-30][17:27:54][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-30][17:27:54][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-30][17:27:54][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-30][17:27:54][chatgpt::app::setup][INFO] run_check_update
+[2023-03-30][17:27:54][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-30][17:27:54][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-30][17:27:54][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-30][17:27:54][attohttpc][DEBUG] trying to connect to [2606:50c0:8001::153]:443
+[2023-03-30][17:27:54][attohttpc][DEBUG] failed to connect to [2606:50c0:8001::153]:443: Network is unreachable (os error 101)
+[2023-03-30][17:27:54][attohttpc][DEBUG] trying to connect to 185.199.109.153:443
+[2023-03-30][17:27:54][attohttpc][DEBUG] successfully connected to 185.199.109.153:443, took 29ms
+[2023-03-30][17:27:54][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-30][17:27:54][attohttpc][DEBUG] creating a length body reader
+[2023-03-30][17:27:54][attohttpc][DEBUG] creating gzip decoder
+[2023-03-30][17:27:54][attohttpc][DEBUG] status code 200
+[2023-03-31][07:52:32][chatgpt::app::setup][INFO] stepup
+[2023-03-31][07:52:32][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-31][07:52:32][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-31][07:52:32][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-31][07:52:32][chatgpt::app::setup][INFO] run_check_update
+[2023-03-31][07:52:32][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-31][07:52:32][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-31][07:52:32][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-31][07:52:32][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-03-31][07:52:32][attohttpc][DEBUG] failed to connect to [2606:50c0:8000::153]:443: Network is unreachable (os error 101)
+[2023-03-31][07:52:32][attohttpc][DEBUG] trying to connect to 185.199.109.153:443
+[2023-03-31][07:52:32][attohttpc][DEBUG] successfully connected to 185.199.109.153:443, took 28ms
+[2023-03-31][07:52:33][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-31][07:52:33][attohttpc][DEBUG] creating a length body reader
+[2023-03-31][07:52:33][attohttpc][DEBUG] creating gzip decoder
+[2023-03-31][07:52:33][attohttpc][DEBUG] status code 200
+[2023-03-31][18:11:00][chatgpt::app::setup][INFO] stepup
+[2023-03-31][18:11:00][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-03-31][18:11:00][chatgpt::app::setup][INFO] stepup_tray
+[2023-03-31][18:11:00][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-03-31][18:11:00][chatgpt::app::setup][INFO] run_check_update
+[2023-03-31][18:11:00][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-03-31][18:11:00][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-03-31][18:11:00][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-03-31][18:11:00][attohttpc][DEBUG] trying to connect to [2606:50c0:8003::153]:443
+[2023-03-31][18:11:00][attohttpc][DEBUG] failed to connect to [2606:50c0:8003::153]:443: Network is unreachable (os error 101)
+[2023-03-31][18:11:00][attohttpc][DEBUG] trying to connect to 185.199.110.153:443
+[2023-03-31][18:11:00][attohttpc][DEBUG] successfully connected to 185.199.110.153:443, took 32ms
+[2023-03-31][18:11:00][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-03-31][18:11:00][attohttpc][DEBUG] creating a length body reader
+[2023-03-31][18:11:00][attohttpc][DEBUG] creating gzip decoder
+[2023-03-31][18:11:00][attohttpc][DEBUG] status code 200
+[2023-04-02][21:49:59][chatgpt::app::setup][INFO] stepup
+[2023-04-02][21:49:59][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-02][21:49:59][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-02][21:49:59][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-02][21:49:59][chatgpt::app::setup][INFO] run_check_update
+[2023-04-02][21:49:59][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-02][21:49:59][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-02][21:49:59][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-02][21:49:59][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-04-02][21:49:59][attohttpc][DEBUG] trying to connect to 185.199.111.153:443
+[2023-04-02][21:50:00][attohttpc][DEBUG] successfully connected to 185.199.111.153:443, took 273ms
+[2023-04-02][21:50:00][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-02][21:50:00][attohttpc][DEBUG] creating a length body reader
+[2023-04-02][21:50:00][attohttpc][DEBUG] creating gzip decoder
+[2023-04-02][21:50:00][attohttpc][DEBUG] status code 200
+[2023-04-02][22:11:52][chatgpt::app::setup][INFO] stepup
+[2023-04-02][22:11:52][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-02][22:11:52][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-02][22:11:52][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-02][22:11:52][chatgpt::app::setup][INFO] run_check_update
+[2023-04-02][22:11:52][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-02][22:11:52][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-02][22:11:52][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-02][22:11:52][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-04-02][22:11:53][attohttpc][DEBUG] trying to connect to 185.199.110.153:443
+[2023-04-02][22:11:53][attohttpc][DEBUG] successfully connected to 185.199.110.153:443, took 363ms
+[2023-04-02][22:11:53][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-02][22:11:53][attohttpc][DEBUG] creating a length body reader
+[2023-04-02][22:11:53][attohttpc][DEBUG] creating gzip decoder
+[2023-04-02][22:11:53][attohttpc][DEBUG] status code 200
+[2023-04-03][11:10:32][chatgpt::app::setup][INFO] stepup
+[2023-04-03][11:10:32][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-03][11:10:32][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-03][11:10:32][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-03][11:10:32][chatgpt::app::setup][INFO] run_check_update
+[2023-04-03][11:10:32][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-03][11:10:32][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-03][11:10:32][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-03][11:10:32][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-04-03][11:10:32][attohttpc][DEBUG] trying to connect to 185.199.109.153:443
+[2023-04-03][11:10:32][attohttpc][DEBUG] successfully connected to 185.199.109.153:443, took 295ms
+[2023-04-03][11:10:32][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-03][11:10:33][attohttpc][DEBUG] creating a length body reader
+[2023-04-03][11:10:33][attohttpc][DEBUG] creating gzip decoder
+[2023-04-03][11:10:33][attohttpc][DEBUG] status code 200
+[2023-04-05][13:48:23][chatgpt::app::setup][INFO] stepup
+[2023-04-05][13:48:23][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-05][13:48:23][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-05][13:48:23][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-05][13:48:24][chatgpt::app::setup][INFO] run_check_update
+[2023-04-05][13:48:24][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-05][13:48:24][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-05][13:48:24][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-05][13:48:27][attohttpc][DEBUG] trying to connect to [2606:50c0:8000::153]:443
+[2023-04-05][13:48:28][attohttpc][DEBUG] trying to connect to 185.199.108.153:443
+[2023-04-05][13:48:28][attohttpc][DEBUG] trying to connect to [2606:50c0:8001::153]:443
+[2023-04-05][13:48:28][attohttpc][DEBUG] trying to connect to 185.199.109.153:443
+[2023-04-05][13:48:28][attohttpc][DEBUG] trying to connect to [2606:50c0:8002::153]:443
+[2023-04-05][13:48:28][attohttpc][DEBUG] trying to connect to 185.199.110.153:443
+[2023-04-05][13:48:29][attohttpc][DEBUG] trying to connect to [2606:50c0:8003::153]:443
+[2023-04-05][13:48:29][attohttpc][DEBUG] trying to connect to 185.199.111.153:443
+[2023-04-05][13:48:36][attohttpc][DEBUG] successfully connected to 185.199.108.153:443, took 9059ms
+[2023-04-05][13:48:37][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-05][13:48:37][attohttpc][DEBUG] creating a length body reader
+[2023-04-05][13:48:37][attohttpc][DEBUG] creating gzip decoder
+[2023-04-05][13:48:37][attohttpc][DEBUG] status code 200
+[2023-04-12][13:24:55][chatgpt::app::setup][INFO] stepup
+[2023-04-12][13:24:55][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-12][13:24:55][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-12][13:24:55][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-12][13:24:55][chatgpt::app::setup][INFO] run_check_update
+[2023-04-12][13:24:55][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-12][13:24:55][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-12][13:24:55][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-15][19:01:34][chatgpt::app::setup][INFO] stepup
+[2023-04-15][19:01:34][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-15][19:01:34][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-15][19:01:34][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-15][19:01:34][chatgpt::app::setup][INFO] run_check_update
+[2023-04-15][19:01:34][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-15][19:01:34][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-15][19:01:34][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-15][19:01:34][attohttpc][DEBUG] trying to connect to [2606:50c0:8002::153]:443
+[2023-04-15][19:01:34][attohttpc][DEBUG] trying to connect to 185.199.111.153:443
+[2023-04-15][19:01:34][attohttpc][DEBUG] successfully connected to 185.199.111.153:443, took 238ms
+[2023-04-15][19:01:35][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-15][19:01:35][attohttpc][DEBUG] creating a length body reader
+[2023-04-15][19:01:35][attohttpc][DEBUG] creating gzip decoder
+[2023-04-15][19:01:35][attohttpc][DEBUG] status code 200
+[2023-04-16][07:16:15][chatgpt::app::setup][INFO] stepup
+[2023-04-16][07:16:15][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-16][07:16:15][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-16][07:16:15][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-16][07:16:15][chatgpt::app::setup][INFO] run_check_update
+[2023-04-16][07:16:15][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-16][07:16:15][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-16][07:16:15][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-16][07:16:15][attohttpc][DEBUG] trying to connect to [2606:50c0:8003::153]:443
+[2023-04-16][07:16:15][attohttpc][DEBUG] trying to connect to 185.199.109.153:443
+[2023-04-16][07:16:15][attohttpc][DEBUG] successfully connected to 185.199.109.153:443, took 237ms
+[2023-04-16][07:16:15][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-16][07:16:15][attohttpc][DEBUG] creating a length body reader
+[2023-04-16][07:16:15][attohttpc][DEBUG] creating gzip decoder
+[2023-04-16][07:16:15][attohttpc][DEBUG] status code 200
+[2023-04-16][07:22:15][chatgpt::app::setup][INFO] stepup
+[2023-04-16][07:22:15][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-16][07:22:15][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-16][07:22:15][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-16][07:22:15][chatgpt::app::setup][INFO] run_check_update
+[2023-04-16][07:22:15][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-16][07:22:15][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-16][07:22:15][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-16][07:22:15][attohttpc][DEBUG] trying to connect to [2606:50c0:8001::153]:443
+[2023-04-16][07:22:15][attohttpc][DEBUG] trying to connect to 185.199.110.153:443
+[2023-04-16][07:22:15][attohttpc][DEBUG] successfully connected to 185.199.110.153:443, took 233ms
+[2023-04-16][07:22:15][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-16][07:22:16][attohttpc][DEBUG] creating a length body reader
+[2023-04-16][07:22:16][attohttpc][DEBUG] creating gzip decoder
+[2023-04-16][07:22:16][attohttpc][DEBUG] status code 200
+[2023-04-19][10:10:55][chatgpt::app::setup][INFO] stepup
+[2023-04-19][10:10:55][chatgpt::app::setup][INFO] global_shortcut: `Ctrl+Shift+O`
+[2023-04-19][10:10:55][chatgpt::app::setup][INFO] stepup_tray
+[2023-04-19][10:10:55][chatgpt::app::setup][INFO] global_shortcut_register
+[2023-04-19][10:10:55][chatgpt::app::setup][INFO] run_check_update
+[2023-04-19][10:10:55][chatgpt::app::setup][INFO] main_window: https://chat.openai.com
+[2023-04-19][10:10:55][chatgpt::utils][INFO] run_check_update: silent=false has_msg=None
+[2023-04-19][10:10:55][attohttpc][DEBUG] trying to connect to lencx.github.io:443
+[2023-04-19][10:10:56][attohttpc][DEBUG] trying to connect to [2606:50c0:8002::153]:443
+[2023-04-19][10:10:56][attohttpc][DEBUG] failed to connect to [2606:50c0:8002::153]:443: Network is unreachable (os error 101)
+[2023-04-19][10:10:56][attohttpc][DEBUG] trying to connect to 185.199.110.153:443
+[2023-04-19][10:10:56][attohttpc][DEBUG] successfully connected to 185.199.110.153:443, took 61ms
+[2023-04-19][10:10:56][attohttpc][DEBUG] GET /ChatGPT/install.json HTTP/1.1
+[2023-04-19][10:10:56][attohttpc][DEBUG] creating a length body reader
+[2023-04-19][10:10:56][attohttpc][DEBUG] creating gzip decoder
+[2023-04-19][10:10:56][attohttpc][DEBUG] status code 200
