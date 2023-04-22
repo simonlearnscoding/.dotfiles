@@ -1,0 +1,4 @@
+[submodule "scripts"]
+	url = https://github.com/simonlearnscoding/scripts.git
+[submodule "installation-scripts"]
+	url = https://github.com/simonlearnscoding/my-linux-setup.git
