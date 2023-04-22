@@ -10,7 +10,8 @@ alias lsl="exa --group-directories-first -l --icons --no-permissions --no-user  
 alias nv= "neovide --multigrid"
 alias lg="ls | grep"
 alias see="batcat"
-alias c="zi"
+alias c="z"
+
 alias ci="zi"
 alias open="xdg-open"
 alias aio="C-b Tab"
