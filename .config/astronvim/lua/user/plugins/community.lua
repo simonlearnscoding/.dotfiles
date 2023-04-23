@@ -91,13 +91,12 @@ return {
     },
     opts = {
       default = {
-        theme = "tokyonight", -- the default theme to use if no timeframes match
-        bg = "dark", -- the default background to use
+        theme = "rose-pine", -- the default theme to use if no timeframes match
       },
       timeframes = { -- the timeframes to use
         { theme = "rose-pine", start = "19:36", stop = "20:10" },
-        -- { theme = "kanagawa", start = "20:10", stop = "16:44" },
-        { theme = "tokyonight", start = "16:45", stop = "19:35", bg = "dark" },
+        { theme = "kanagawa", start = "20:10", stop = "16:44" },
+        -- { theme = "tokyonight", start = "16:45", stop = "19:35", bg = "dark" },
         { theme = "onigiri", start = "22:22", stop = "23:30", bg = "dark" },
       },
     },

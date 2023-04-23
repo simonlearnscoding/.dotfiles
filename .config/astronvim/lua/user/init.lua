@@ -38,8 +38,8 @@ return {
       [tabpre .. "]"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
       [tabpre .. "["] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
       -- Copy/paste with system clipboard
-      ["gy"] = { '"+y', desc = "Copy to system clipboard" },
-      ["gp"] = { '"+p', desc = "Paste from system clipboard" },
+      -- ["gy"] = { '"+y', desc = "Copy to system clipboard" },
+      -- ["gp"] = { '"+p', desc = "Paste from system clipboard" },
     },
     i = {
       -- date/time input
