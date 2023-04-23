@@ -14,4 +14,5 @@ export EDITOR="/usr/bin/nvim"
 export GPG_TTY=$TTY
 eval "$(zoxide init bash)"
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+path = "$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/AppImages"
