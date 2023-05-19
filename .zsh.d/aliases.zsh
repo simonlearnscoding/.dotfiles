@@ -1,6 +1,6 @@
 
 # Define aliases.
-alias l="exa --icons  --group-directories-first --icons"
+alias l="exa --icons -a --group-directories-first --icons"
 alias ls="exa --icons -a --group-directories-first --icons"
 alias tree='tree -a -I .git'
 alias lpg='lp -o Ink=MONO'
@@ -21,10 +21,12 @@ alias cdadd="zoxide add"
 alias tv="nvim /home/simone/projects/vault/Tasks.md"
 alias tvi="neovide --nofork /home/simone/projects/vault/Tasks.md"
 alias t="task '(depends: )'"
+alias tdel="task delete"
+alias tc="task context "
 alias tp="task projects"
 alias ta='task add'
 alias td='task done'
-alias tan='task add scheduled:today'
-alias tat='task add scheduled:tomorrow until:sch+14d'
+alias tat='task add planned:tod'
+alias taw='task add planned:tw' 
 alias tm='task modify'
-alias rm='trash-put'
+alias r='trash-put'

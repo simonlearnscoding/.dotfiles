@@ -55,13 +55,34 @@ windows:
         - left_pane:
             - sleep 0.1 && xdotool key --clearmodifiers "Control+a"; xdotool key --clearmodifiers "Tab"; clear
         - right_pane_top:
-            - ~/scripts/monitor_task_changes_notimer.sh "TODAY" "+TODAY or +today"
+            - taskwarrior-tui -r todays-focus
         - right_pane_middle:
             - ~/scripts/cbonsai_restart.sh
           # - cbonsai -li
         - right_pane_bottom:
             - cmatrix -C cyan
-#
+  - Week_View:
+      layout: d167,189x40,0,0{50x40,0,0[50x9,0,0,1,50x30,0,10,13],90x40,51,0,6,47x40,142,0,7}
+      panes:
+        - taskwarrior-tui -r todays-focus
+        - taskwarrior-tui -r today
+        -
+        - taskwarrior-tui -r this_week
+  - Upcoming_view:
+      layout: b3e0,189x41,0,0{152x41,0,0[152x25,0,0,2,152x15,0,26{55x15,0,26,9,50x15,56,26,10,45x15,107,26,11}],36x41,153,0[36x25,153,0,12,36x15,153,26,14]}
+      panes:
+        - 
+        - taskwarrior-tui -r this_week
+        - taskwarrior-tui -r next_week
+        - taskwarrior-tui -r this_month
+        - taskwarrior-tui -r not_planned
+        - taskwarrior-tui -r next_month
+      #
+      #
+      #
+      #
+      #
+      # 
 # windows:
 #   - my_window:
 #       layout: "main-vertical"
