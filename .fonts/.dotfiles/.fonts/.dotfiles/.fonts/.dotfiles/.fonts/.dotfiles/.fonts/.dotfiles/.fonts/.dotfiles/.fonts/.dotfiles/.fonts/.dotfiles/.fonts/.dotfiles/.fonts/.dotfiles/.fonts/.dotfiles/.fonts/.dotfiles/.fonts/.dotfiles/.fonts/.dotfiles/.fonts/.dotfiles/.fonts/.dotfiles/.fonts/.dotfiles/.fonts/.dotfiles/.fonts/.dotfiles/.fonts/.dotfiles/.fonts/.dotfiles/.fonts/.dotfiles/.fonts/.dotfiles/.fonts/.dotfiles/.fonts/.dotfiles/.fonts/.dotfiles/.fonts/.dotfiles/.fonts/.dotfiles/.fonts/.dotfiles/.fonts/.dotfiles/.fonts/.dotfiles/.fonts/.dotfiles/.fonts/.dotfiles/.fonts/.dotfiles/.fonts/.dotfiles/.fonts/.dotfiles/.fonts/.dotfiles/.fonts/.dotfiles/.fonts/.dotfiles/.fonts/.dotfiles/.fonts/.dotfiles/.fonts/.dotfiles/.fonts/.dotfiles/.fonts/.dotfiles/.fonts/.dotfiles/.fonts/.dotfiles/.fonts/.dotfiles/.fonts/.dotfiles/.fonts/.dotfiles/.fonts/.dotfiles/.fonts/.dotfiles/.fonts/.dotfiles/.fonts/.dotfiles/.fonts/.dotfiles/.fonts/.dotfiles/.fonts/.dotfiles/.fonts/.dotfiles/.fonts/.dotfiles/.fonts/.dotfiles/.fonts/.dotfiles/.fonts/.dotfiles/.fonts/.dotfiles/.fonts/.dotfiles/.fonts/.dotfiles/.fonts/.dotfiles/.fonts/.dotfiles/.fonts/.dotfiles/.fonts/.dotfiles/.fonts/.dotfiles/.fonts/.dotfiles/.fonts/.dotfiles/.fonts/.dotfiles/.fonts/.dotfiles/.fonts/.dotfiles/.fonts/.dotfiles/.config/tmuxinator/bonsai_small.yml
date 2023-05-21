@@ -1,0 +1,9 @@
+# ~/.config/tmuxinator/bonsai_small.yml
+name: bonsai_small
+root: ~/
+
+windows:
+  - single_pane:
+      layout: even-horizontal
+      panes:
+        - sleep 0.1 && xdotool key --clearmodifiers "Control+a"; xdotool key --clearmodifiers "Tab"; clear

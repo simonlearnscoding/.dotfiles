@@ -54,17 +54,49 @@ function rem() {
 }
 zstyle ':z4h:' start-tmux no
 
+#
+# if [[ -z "$TMUX" ]]; then
+#   echo 'has been called'
+#   source $HOME/scripts/count_programs.zsh
+#   num_programs=$?
+#
+#   if [ $num_programs -lt 2 ]; then
+#     tmuxinator_project="bonsai"
+#   else
+#     tmuxinator_project="bonsai_small"
+#   fi
+#
+#   echo $tmuxinator_project
+#   tmuxinator start $tmuxinator_project
+#
+# else
+#   source $HOME/.dotfiles/scripts/count_programs.zsh
+#   num_programs=$?
+#
+#
+#   if [ $num_programs -lt 2 ]; then
+#     tmuxinator_project="bonsai"
+#   else
+#     tmuxinator_project="bonsai_small"
+#   fi
+#
+#   if tmux has-session -t $tmuxinator_project 2>/dev/null; then
+#     echo "Attaching to session $tmuxinator_project"
+#     tmux attach -t $tmuxinator_project
+#   else
+#     echo "Creating and starting session $tmuxinator_project"
+#     tmuxinator start $tmuxinator_project
+#   fi
+# fi
+#
+
 
 if [[ -z "$TMUX" ]]; then
   echo 'has been called'
   source $HOME/scripts/count_programs.zsh
   num_programs=$?
 
-  if [ $num_programs -lt 2 ]; then
-    tmuxinator_project="bonsai"
-  else
-    tmuxinator_project="bonsai_small"
-  fi
+  tmuxinator_project="bonsai"
 
   echo $tmuxinator_project
   tmuxinator start $tmuxinator_project
@@ -73,12 +105,7 @@ else
   source $HOME/.dotfiles/scripts/count_programs.zsh
   num_programs=$?
 
-
-  if [ $num_programs -lt 2 ]; then
-    tmuxinator_project="bonsai"
-  else
-    tmuxinator_project="bonsai_small"
-  fi
+  tmuxinator_project="bonsai"
   
   if tmux has-session -t $tmuxinator_project 2>/dev/null; then
     echo "Attaching to session $tmuxinator_project"
@@ -88,6 +115,9 @@ else
     tmuxinator start $tmuxinator_project
   fi
 fi
+
+
+
 
 # zstyle ':z4h:'  tmuxifier load-session example.window.sh
 
@@ -180,7 +210,6 @@ compdef _directories md
 [[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
 
 alias cd="z"
-alias b="cd .."
 
 
 
@@ -194,7 +223,13 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 #
 #
 
+
+
+
+
 export PATH=$PATH:~/.dotfiles/scripts
+
+export PATH="$PATH:/home/simone/.cargo/bin"
 # function create-react-tailwind() {
 #   if [ -z "$1" ]
 #   then
@@ -235,3 +270,7 @@ export PATH=$PATH:~/.dotfiles/scripts
 # }
 #
 #
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

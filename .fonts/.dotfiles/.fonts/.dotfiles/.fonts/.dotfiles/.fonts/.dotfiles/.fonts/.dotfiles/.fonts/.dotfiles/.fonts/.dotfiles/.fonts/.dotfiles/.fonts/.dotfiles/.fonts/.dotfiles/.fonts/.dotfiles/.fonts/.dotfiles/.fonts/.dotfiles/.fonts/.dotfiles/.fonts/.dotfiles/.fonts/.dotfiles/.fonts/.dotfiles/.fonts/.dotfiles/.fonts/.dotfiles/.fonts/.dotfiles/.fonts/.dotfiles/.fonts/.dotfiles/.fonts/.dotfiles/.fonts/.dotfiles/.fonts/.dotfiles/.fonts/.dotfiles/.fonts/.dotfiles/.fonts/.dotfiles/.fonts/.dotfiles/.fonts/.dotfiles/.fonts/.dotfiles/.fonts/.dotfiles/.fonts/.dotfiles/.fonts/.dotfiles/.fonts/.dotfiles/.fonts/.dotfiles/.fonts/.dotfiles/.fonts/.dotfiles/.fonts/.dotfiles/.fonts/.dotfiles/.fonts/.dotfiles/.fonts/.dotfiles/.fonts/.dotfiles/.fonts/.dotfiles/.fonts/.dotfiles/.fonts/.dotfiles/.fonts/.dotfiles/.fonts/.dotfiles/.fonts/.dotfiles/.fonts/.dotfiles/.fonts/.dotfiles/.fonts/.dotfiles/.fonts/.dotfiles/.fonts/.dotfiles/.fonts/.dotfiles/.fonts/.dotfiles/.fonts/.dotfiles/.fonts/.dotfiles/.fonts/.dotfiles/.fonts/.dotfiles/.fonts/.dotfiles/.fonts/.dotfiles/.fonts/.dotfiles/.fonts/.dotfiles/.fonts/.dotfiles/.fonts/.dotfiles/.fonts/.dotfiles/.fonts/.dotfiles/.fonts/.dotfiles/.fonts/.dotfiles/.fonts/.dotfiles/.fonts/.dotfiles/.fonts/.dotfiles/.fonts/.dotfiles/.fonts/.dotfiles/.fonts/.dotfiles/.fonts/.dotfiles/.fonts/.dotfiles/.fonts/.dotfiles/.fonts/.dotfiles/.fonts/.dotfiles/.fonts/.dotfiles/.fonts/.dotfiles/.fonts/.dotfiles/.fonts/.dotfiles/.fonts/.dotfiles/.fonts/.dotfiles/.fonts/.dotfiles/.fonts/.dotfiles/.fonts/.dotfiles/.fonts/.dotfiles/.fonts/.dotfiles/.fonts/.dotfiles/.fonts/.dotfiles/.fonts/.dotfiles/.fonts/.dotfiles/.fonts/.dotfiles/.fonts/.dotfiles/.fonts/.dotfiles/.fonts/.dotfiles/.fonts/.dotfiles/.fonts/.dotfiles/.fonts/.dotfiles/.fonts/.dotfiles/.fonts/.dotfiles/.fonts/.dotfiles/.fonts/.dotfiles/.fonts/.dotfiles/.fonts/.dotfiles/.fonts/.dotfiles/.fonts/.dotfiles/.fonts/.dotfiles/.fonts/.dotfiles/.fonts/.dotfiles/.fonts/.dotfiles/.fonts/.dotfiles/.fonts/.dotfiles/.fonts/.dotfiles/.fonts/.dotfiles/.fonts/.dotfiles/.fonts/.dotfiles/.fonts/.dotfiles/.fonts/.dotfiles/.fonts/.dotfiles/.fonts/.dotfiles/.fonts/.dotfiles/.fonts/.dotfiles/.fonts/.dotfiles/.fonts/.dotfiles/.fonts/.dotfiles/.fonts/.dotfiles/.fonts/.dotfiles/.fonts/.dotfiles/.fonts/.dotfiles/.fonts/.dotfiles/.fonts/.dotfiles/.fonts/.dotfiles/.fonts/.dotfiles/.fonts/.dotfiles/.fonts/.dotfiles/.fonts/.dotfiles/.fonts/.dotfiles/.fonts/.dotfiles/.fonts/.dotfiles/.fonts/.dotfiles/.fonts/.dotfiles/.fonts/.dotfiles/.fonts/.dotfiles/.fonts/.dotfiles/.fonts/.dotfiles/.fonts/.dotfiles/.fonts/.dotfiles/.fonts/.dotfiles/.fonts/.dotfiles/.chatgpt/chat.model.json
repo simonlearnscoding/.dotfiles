@@ -1,0 +1,8 @@
+{
+  "name": "ChatGPT Model",
+  "link": "https://github.com/lencx/ChatGPT",
+  "sync_prompts": {
+    "id": "chatgpt_prompts",
+    "last_updated": 1679144662320
+  }
+}

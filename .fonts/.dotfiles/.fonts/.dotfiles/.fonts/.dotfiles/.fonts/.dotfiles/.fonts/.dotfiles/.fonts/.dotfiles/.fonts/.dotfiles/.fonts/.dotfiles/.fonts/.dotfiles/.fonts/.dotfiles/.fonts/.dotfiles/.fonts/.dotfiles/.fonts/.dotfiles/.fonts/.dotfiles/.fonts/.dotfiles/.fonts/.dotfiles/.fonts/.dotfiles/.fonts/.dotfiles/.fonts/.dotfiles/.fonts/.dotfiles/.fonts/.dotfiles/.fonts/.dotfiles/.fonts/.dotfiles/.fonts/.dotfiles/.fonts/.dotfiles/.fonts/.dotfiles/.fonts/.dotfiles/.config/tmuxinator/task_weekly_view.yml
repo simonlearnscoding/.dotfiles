@@ -1,0 +1,13 @@
+
+# ~/.tmuxinator/project_name.yml
+
+name: project_name
+root: ~/
+
+windows:
+  - TaskWarrior:
+      layout: 4a9c,236x50,0,0{46x50,0,0,5,142x50,47,0,11,46x50,190,0,13}
+      panes:
+        - taskwarrior-tui -r today
+        -
+        - taskwarrior-tui -r this_week

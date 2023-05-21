@@ -10,9 +10,32 @@ alias lsl="exa --group-directories-first -l --icons --no-permissions --no-user  
 alias nv= "neovide --multigrid"
 alias lg="ls | grep"
 alias see="batcat"
-alias c="z"
 
-alias ci="zi"
+
+
+# Create a new command 'c' which is equivalent to 'z' from zoxide
+# alias c="z"
+
+# Override c command
+c() {
+    z "$@" && echo "$PWD" > ~/.current_dir
+}
+
+# Create a new command 'ci' which is equivalent to 'zi' from zoxide
+# alias ci="zi"
+
+# Override ci command
+ci() {
+    zi "$@" && echo "$PWD" > ~/.current_dir
+}
+
+
+b() {
+    
+    z .. && echo "$PWD" > ~/.current_dir
+}
+
+
 alias open="xdg-open"
 alias aio="C-b Tab"
 alias tt="taskwarrior-tui"

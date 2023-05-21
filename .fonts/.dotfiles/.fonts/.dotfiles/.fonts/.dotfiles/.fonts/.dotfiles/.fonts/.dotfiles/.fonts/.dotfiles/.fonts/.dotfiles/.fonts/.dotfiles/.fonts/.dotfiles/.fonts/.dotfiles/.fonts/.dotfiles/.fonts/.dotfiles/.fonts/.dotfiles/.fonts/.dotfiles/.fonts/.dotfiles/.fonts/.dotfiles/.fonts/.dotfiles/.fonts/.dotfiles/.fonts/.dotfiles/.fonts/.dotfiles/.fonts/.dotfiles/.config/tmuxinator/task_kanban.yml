@@ -1,0 +1,15 @@
+
+# ~/.tmuxinator/project_name.yml
+
+name: project_name
+root: ~/
+
+windows:
+  - TaskWarrior:
+      layout: c4e3,159x47,0,0{79x47,0,0[79x23,0,0{39x23,0,0,1,39x23,40,0,2},79x23,0,24,3],79x47,80,0,4}
+      panes:
+        - taskwarrior-tui -r custom
+        - taskwarrior-tui -r custom
+        - taskwarrior-tui -r custom
+        - taskwarrior-tui -r custom
+        - 
