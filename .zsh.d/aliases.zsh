@@ -10,7 +10,8 @@ alias lsl="exa --group-directories-first -l --icons --no-permissions --no-user  
 alias nv= "neovide --multigrid"
 alias lg="ls | grep"
 alias see="batcat"
-
+alias rn="task add planned:tod priority:H"
+alias tod="task add planned:tod"
 
 
 # Create a new command 'c' which is equivalent to 'z' from zoxide
@@ -35,6 +36,8 @@ b() {
     z .. && echo "$PWD" > ~/.current_dir
 }
 
+
+alias gg="lazygit"
 
 alias open="xdg-open"
 alias aio="C-b Tab"

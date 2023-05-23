@@ -177,7 +177,7 @@ z4h install ohmyzsh/ohmyzsh || return
 z4h init || return
 # tmuxifier load-session ~/example.window.sh
 # Extend PATH.
-path=(~/bin $path)
+# path=(~/bin $path)
 
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
@@ -270,6 +270,11 @@ export PATH="$PATH:/home/simone/.cargo/bin"
 # }
 #
 #
+export FZF_DEFAULT_COMMAND='fd --type f --hidden'
+export FZF_DEFAULT_OPTS='--no-height'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

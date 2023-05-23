@@ -27,8 +27,8 @@ hooks.location=~/.task/hooks
 # Color theme (uncomment one to use)
 #include light-16.theme
 #include light-256.theme
-include dark-16.theme
-# include dark-256.theme
+# include dark-16.theme
+include dark-256.theme
 #include dark-red-256.theme
 #include dark-green-256.theme
 #include dark-blue-256.theme
@@ -53,12 +53,17 @@ search.case.sensitive=no
 # Daily burndown
 alias.burndown=burndown.daily
 
+
+uda.sched.type=string
+uda.planned.values=mon,tue,wed,thu,fri,sat,sun
+
 active.indicator=>
 uda.planned.type=string
 uda.planned.values=tod,tw,nw,tm,tq,nm
 # Sort the columns a little differently
-report.list.columns=id,description,project,priority,tags,due
-report.list.labels= ID, Description, Project, Pri, Tags ,Due
+report.list.columns=id,description,project,priority,planned,due
+report.list.labels= ID, Description,Project,Pri,Planned,Due
+report.list.sort=planned
 
 report.this_week.description=Tasks this week
 report.this_week.filter=((planned:tw ) or (due.after:eow-1week and due.before:eow)) and status:pending
@@ -76,8 +81,8 @@ report.next_week.sort=due+
 
 report.today.description=Tasks today
 report.today.filter=(planned:tod or +TODAY or +OVERDUE) and status:pending and priority!=H
-report.today.columns=id,description,project
-report.today.labels=ID,Description,Project
+report.today.columns=id,description
+report.today.labels=ID,Description
 
 report.todays-focus.description=Tasks today
 report.todays-focus.filter=priority:H and status:pending and (planned:tod or +TODAY or +OVERDUE)
@@ -142,6 +147,7 @@ taskd.server=pop-os.localdomain:53589
 taskd.credentials=Public\/First\/e961fd7c-0bba-4e85-952d-9340c227295f
 context.nofinance.read=not project:finance
 context.nofinance.write=not project:finance
-context.masters.read=project:Master-thesis
-context.masters.write=project:Master-thesis
+context.masters.read=project:master-thesis
+context.masters.write=project:master-thesis
 dateformat=%a
+context=discord

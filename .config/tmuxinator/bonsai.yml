@@ -49,7 +49,7 @@ root: ~/
 windows:
   - my_window:
       # layout: "main-vertical"
-      layout: 3294,189x41,0,0{152x41,0,0,0,36x41,153,0[36x14,153,0,1,36x21,153,15,2,36x4,153,37,3]}
+      layout: b355,188x47,0,0{153x47,0,0,0,34x47,154,0[34x13,154,0,3,34x33,154,14,4]}
       # main-pane-width: 70
       panes:
         - left_pane:
@@ -57,10 +57,8 @@ windows:
         - right_pane_top:
             - taskwarrior-tui -r todays-focus
         - right_pane_middle:
-            - ~/scripts/cbonsai_restart.sh
+            - taskwarrior-tui -r today
           # - cbonsai -li
-        - right_pane_bottom:
-            - cmatrix -C cyan
   - Week_View:
       layout: d167,189x40,0,0{50x40,0,0[50x9,0,0,1,50x30,0,10,13],90x40,51,0,6,47x40,142,0,7}
       panes:
