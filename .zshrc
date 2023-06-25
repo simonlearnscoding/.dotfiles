@@ -100,6 +100,9 @@ if [[ -z "$TMUX" ]]; then
 
   echo $tmuxinator_project
   tmuxinator start $tmuxinator_project
+  sleep 5
+  tmux select-window -t 2
+  tmux select-pane -t 5
 
 else
   source $HOME/.dotfiles/scripts/count_programs.zsh
@@ -113,6 +116,9 @@ else
   else
     echo "Creating and starting session $tmuxinator_project"
     tmuxinator start $tmuxinator_project
+      sleep 5 
+      tmux select-window -t 2
+      tmux select-pane -t 5
   fi
 fi
 
@@ -225,6 +231,7 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 
 
+export TERM="tmux-256color"
 
 
 export PATH=$PATH:~/.dotfiles/scripts

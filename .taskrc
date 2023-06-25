@@ -2,152 +2,43 @@
 # Taskwarrior program configuration file.
 # For more documentation, see https://taskwarrior.org or try 'man task', 'man task-color',
 # 'man task-sync' or 'man taskrc'
+include .dotfiles/.taskrc_files/.themes
+include .dotfiles/.taskrc_files/.reports
+include .dotfiles/.taskrc_files/.taskrc_taskd
 
-# Here is an example of entries that use the default, override and blank values
-#   variable=foo   -- By specifying a value, this overrides the default
-#   variable=      -- By specifying no value, this means no default
-#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
-
-# You can also refence environment variables:
-#   variable=$HOME/task
-#   variable=$VALUE
-
-# Use the command 'task show' to see all defaults and overrides
-# report.next.columns= id, description
-# report.next.columns=description,id.due.relative,project,tags
-# Files
 data.location=~/.task
-
-# To use the default location of the XDG directories,
-# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
-
-#data.location=~/.local/share/task
 hooks.location=~/.task/hooks
-
-# Color theme (uncomment one to use)
-#include light-16.theme
-#include light-256.theme
-# include dark-16.theme
-include dark-256.theme
-#include dark-red-256.theme
-#include dark-green-256.theme
-#include dark-blue-256.theme
-#include dark-violets-256.theme
-#include dark-yellow-green.theme
-#include dark-gray-256.theme
-#include dark-gray-blue-256.theme
-# include solarized-dark-256.theme
-#include solarized-light-256.theme
-#include no-color.theme
-
 report.default=list
-# uda.taskwarrior-tui.style.report.selection=list
 urgency.uda.priority.L.coefficient=-2.0
 uda.taskwarrior-tui.task-report.show-info=false
-# By default, the week starts on Sunday, let's fix that.
 weekstart=monday
-
-# Make searches case insensitive, personal preference
 search.case.sensitive=no
-
-# Daily burndown
 alias.burndown=burndown.daily
 
-
-uda.sched.type=string
-uda.planned.values=mon,tue,wed,thu,fri,sat,sun
-
 active.indicator=>
-uda.planned.type=string
-uda.planned.values=tod,tw,nw,tm,tq,nm
-# Sort the columns a little differently
+
 report.list.columns=id,description,project,priority,planned,due
 report.list.labels= ID, Description,Project,Pri,Planned,Due
 report.list.sort=planned
 
-report.this_week.description=Tasks this week
-report.this_week.filter=((planned:tw ) or (due.after:eow-1week and due.before:eow)) and status:pending
-report.this_week.columns=id,description,due.relative
-report.this_week.labels=ID,Description,Due
-report.this_week.sort=due+
-
-report.projects.filter=projects
-report.next_week.description=Tasks next week
-# report.next_week.filter=planned:nw and status:pending and due.after:now+1week and due.before:now+2weeks status:pending
-report.next_week.filter=((planned:nw ) or (due.after:eow and due.before:sow+2weeks)) and status:pending
-report.next_week.columns=id,description,project,due.relative
-report.next_week.labels=ID,Description,Project,Due
-report.next_week.sort=due+
-
-report.today.description=Tasks today
-report.today.filter=(planned:tod or +TODAY or +OVERDUE) and status:pending and priority!=H
-report.today.columns=id,description
-report.today.labels=ID,Description
-
-report.todays-focus.description=Tasks today
-report.todays-focus.filter=priority:H and status:pending and (planned:tod or +TODAY or +OVERDUE)
-report.todays-focus.columns=id,description,project
-report.todays-focus.labels=ID,Description,Project
-
-report.not_planned.description=not planned
-report.not_planned.filter=(planned: and status:pending) and -today
-report.not_planned.columns=id,description
-report.not_planned.labels=ID,Description
-
-
-# report.mon.description= due:mon
-# report.mon.filter=due:mon and status:pending
-# report.mon.columns=id,description,project
-# report.mon.labels=ID,Description,Project
-#
-#
-# report.tue.description= due:mon
-# report.tue.filter=due:mon and status:pending
-# report.tue.columns=id,description,project
-# report.tue.labels=ID,Description,Project
-
-
-report.this_month.description=Tasks this week
-report.this_month.filter=((planned:tm ) or (due.after:sow+2week and due.before:eom)) and status:pending
-report.this_month.columns=id,description,project
-report.this_month.labels=ID,Description,Project
-report.this_month.sort=due+
-
-
-report.next_month.description=Tasks this week
-report.next_month.filter=((planned:nm) or due.after:som+1month) and status:pending
-report.next_month.columns=id,description,project
-report.next_month.labels=ID,Description,Project
-report.next_month.sort=due+
-
-
 report.next.columns=id,description
 report.next.labels= id,description
 list.all.projects=no
-#undo.style=diff
 default.command=list
-
-
 
 context.next.read=+next
 context.next.write=+next
-
-context.discord.read=+code +discord
-context.discord.write=+code +discord
-
-# report.task.columns=id,project,description,tags,urgency
-#
-
-news.version=2.6.0
 context.today.read=+today or +TODAY
-taskd.certificate=\/home\/simone\/.task\/first.cert.pem
-taskd.key=\/home\/simone\/.task\/first.key.pem
-taskd.ca=\/home\/simone\/.task\/ca.cert.pem
-taskd.server=pop-os.localdomain:53589
-taskd.credentials=Public\/First\/e961fd7c-0bba-4e85-952d-9340c227295f
 context.nofinance.read=not project:finance
 context.nofinance.write=not project:finance
 context.masters.read=project:master-thesis
 context.masters.write=project:master-thesis
 dateformat=%a
-context=discord
+context.planned_no_schedule.read=(planned:tw or planned:nw) and sched:
+context.planned_no_schedule.write=(planned:tw or planned:nw) and not sched
+
+
+context.this_sprint.read=planned:tw or planned:nw
+
+context.planned_and_schedule.read=(planned:tw or planned:nw) and (not sched: )
+# context.planned_no_schedule.write=(planned:tw or planned:nw) and sched

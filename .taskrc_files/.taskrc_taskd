@@ -1,0 +1,5 @@
+
+taskd.certificate=\/home\/simone\/.task\/first.cert.pem
+taskd.key=\/home\/simone\/.task\/first.key.pem
+taskd.ca=\/home\/simone\/.task\/ca.cert.pem
+taskd.server=pop-os.localdomain:535

@@ -46,30 +46,49 @@ root: ~/
 
 # ~/.config/tmuxinator/my_project.yml
 
+#Week_with_days=6e52,188x46,0,0{36x46,0,0[36x12,0,0,1,36x33,0,13,5],118x46,37,0,6,32x46,156,0[32x7,156,0,7,32x5,156,8,35,32x5,156,14,33,32x6,156,20,34,32x6,156,27,31,32x6,156,34,32,32x5,156,41,36]}
+
+#Day_with_hours= e3f1,188x46,0,0{135x46,0,0,3,28x46,136,0[28x8,136,0,4,28x27,136,9,5,28x9,136,37,6],23x46,165,0[23x8,165,0,7,23x8,165,9,8,23x9,165,18,9,23x9,165,28,10,23x8,165,38,25]}
+#Day_with_hours_day_left_side=  3df9,190x48,0,0{28x48,0,0[28x7,0,0,0,28x31,0,8,28,28x8,0,40,27],133x48,29,0,26,27x48,163,0[27x11,163,0,6,27x8,163,12,7,27x9,163,21,8,27x9,163,31,9,27x7,163,41,10]}
+
+#Day_with_hours_day_bottom= d21d,188x47,0,0{149x47,0,0[149x39,0,0,5,149x7,0,40{51x7,0,40,27,60x7,52,40,28,36x7,113,40,29}],38x47,150,0[38x10,150,0,6,38x8,150,11,7,38x9,150,20,8,38x9,150,30,9,38x7,150,40,10]}
 windows:
-  - my_window:
+  - treemux:
       # layout: "main-vertical"
-      layout: b355,188x47,0,0{153x47,0,0,0,34x47,154,0[34x13,154,0,3,34x33,154,14,4]}
-      # main-pane-width: 70
+      layout: 8cf6,188x47,0,0{151x47,0,0,0,36x47,152,0[36x9,152,0,4,36x27,152,10,5,36x9,152,38,6]}
       panes:
-        - left_pane:
-            - sleep 0.1 && xdotool key --clearmodifiers "Control+a"; xdotool key --clearmodifiers "Tab"; clear
+        - center-tool:
+            - make_sidebar.sh && clear
         - right_pane_top:
             - taskwarrior-tui -r todays-focus
         - right_pane_middle:
             - taskwarrior-tui -r today
-          # - cbonsai -li
+            # - sleep 0.8 && xdotool key --clearmodifiers "Control+a"; xdotool key --clearmodifiers "Tab"; clear
+          # - cbonsai -l
+        - right_bottom:
+            - taskwarrior-tui -r habits_today
+
+        # - taskwarrior-tui -r morning
+        # - taskwarrior-tui -r midday
+        # - taskwarrior-tui -r early_pm
+        # - taskwarrior-tui -r late_pm
+        # - taskwarrior-tui -r evening
+
   - Week_View:
-      layout: d167,189x40,0,0{50x40,0,0[50x9,0,0,1,50x30,0,10,13],90x40,51,0,6,47x40,142,0,7}
+      layout: 47ad,188x47,0,0{36x47,0,0[36x25,0,0,2,36x21,0,26,16],119x47,37,0[119x6,37,0,17,119x40,37,7,27],31x47,157,0[31x18,157,0,18,31x17,157,19,19,31x10,157,37,20]}
       panes:
-        - taskwarrior-tui -r todays-focus
-        - taskwarrior-tui -r today
-        -
         - taskwarrior-tui -r this_week
+        - taskwarrior-tui -r next_week
+        - /home/simon/.dotfiles/scripts/ls_cur_dir.sh
+        -
+        - taskwarrior-tui -r mon_wed
+        - taskwarrior-tui -r thu_fri
+        - taskwarrior-tui -r weekend
+
   - Upcoming_view:
       layout: b3e0,189x41,0,0{152x41,0,0[152x25,0,0,2,152x15,0,26{55x15,0,26,9,50x15,56,26,10,45x15,107,26,11}],36x41,153,0[36x25,153,0,12,36x15,153,26,14]}
       panes:
-        - 
+        -
         - taskwarrior-tui -r this_week
         - taskwarrior-tui -r next_week
         - taskwarrior-tui -r this_month
@@ -80,26 +99,43 @@ windows:
       #
       #
       #
-      # 
-# windows:
-#   - my_window:
-#       layout: "main-vertical"
-#       main-pane-width: 60
-#       panes:
-#         - left_pane
-#         - right_pane_top
-#         - right_pane_middle
-#         - right_pane_bottom
-# windows:
-#   - editor:
-#       layout: main-vertical
-#       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-#       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-#       # synchronize: after
-#       panes:
-#         - xdotool_key_sender:
-#             - export TMUX_PREFIX="Control+a"
-#             - xdotool key --clearmodifiers "$TMUX_PREFIX"; xdotool key --clearmodifiers "Tab"; clear
-#         - hi: tmux split -v -p 20
-#   - server: bundle exec rails s
-#   - logs: tail -f log/development.log
+      #
+      #
+      #
+  #
+  # - day_view:
+  #     # layout: "main-vertical"
+  #     # layout: 93d5,188x46,0,0{33x46,0,0[33x7,0,0,1,33x28,0,8,7,33x9,0,37,8],125x46,34,0[125x7,34,0,9,125x38,34,8,10],28x46,160,0[28x7,160,0{26x7,160,0,11,1x7,187,0[1x1,187,0,12,1x2,187,2,13,1x2,187,5,14]},28x8,160,8{26x8,160,8,15,1x8,187,8[1x2,187,8,16,1x2,187,11,17,1x2,187,14,18]},28x9,160,17{26x9,160,17,19,1x9,187,17[1x2,187,17,20,1x3,187,20,21,1x2,187,24,22]},28x9,160,27{26x9,160,27,23,1x9,187,27[1x3,187,27,24,1x2,187,31,25,1x2,187,34,26]},28x9,160,37{26x9,160,37,27,1x9,187,37[1x2,187,37,28,1x3,187,40,29,1x2,187,44,30]}]}
+  #     layout: 94d5,188x46,0,0{33x46,0,0[33x7,0,0,1,33x28,0,8,7,33x9,0,37,8],125x46,34,0[125x7,34,0,9,125x38,34,8,10],28x46,160,0[28x7,160,0{26x7,160,0,11,1x7,187,0[1x1,187,0,12,1x2,187,2,13,1x2,187,5,14]},28x8,160,8{26x8,160,8,15,1x8,187,8[1x2,187,8,16,1x2,187,11,17,1x2,187,14,18]},28x9,160,17{26x9,160,17,19,1x9,187,17[1x2,187,17,20,1x3,187,20,21,1x2,187,24,42]},28x9,160,27{26x9,160,27,23,1x9,187,27[1x3,187,27,24,1x2,187,31,25,1x2,187,34,26]},28x9,160,37{26x9,160,37,27,1x9,187,37[1x2,187,37,28,1x3,187,40,29,1x2,187,44,30]}]}
+  #     panes:
+  #       - right_pane_top:
+  #           - taskwarrior-tui -r todays-focus
+  #       - right_pane_middle:
+  #           - taskwarrior-tui -r today
+  #           # - sleep 0.8 && xdotool key --clearmodifiers "Control+a"; xdotool key --clearmodifiers "Tab"; clear
+  #         # - cbonsai -l
+  #       - right_bottom:
+  #           - taskwarrior-tui -r habits_today
+  #       - /home/simon/.dotfiles/scripts/ls_cur_dir.sh
+  #       - clear
+  #       - taskwarrior-tui -r morning
+  #       - change_color_at_hour.sh 7
+  #       - change_color_at_hour.sh 8
+  #       - change_color_at_hour.sh 9
+  #       - taskwarrior-tui -r midday
+  #       - change_color_at_hour.sh 10
+  #       - change_color_at_hour.sh 11
+  #       - change_color_at_hour.sh 12
+  #       - taskwarrior-tui -r early_pm
+  #       - change_color_at_hour.sh 13
+  #       - change_color_at_hour.sh 14
+  #       - change_color_at_hour.sh 15
+  #       - taskwarrior-tui -r late_pm
+  #       - change_color_at_hour.sh 16
+  #       - change_color_at_hour.sh 17
+  #       - change_color_at_hour.sh 18
+  #       # - taskwarrior-tui -r evening & tmux select-pane 4
+  #       - taskwarrior-tui -r evening
+  #       - change_color_at_hour.sh 19
+  #       - change_color_at_hour.sh 20
+  #       - change_color_at_hour.sh 21

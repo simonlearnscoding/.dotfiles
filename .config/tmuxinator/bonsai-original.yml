@@ -1,0 +1,105 @@
+# /home/simone/.config/tmuxinator/bonsai.yml
+
+name: bonsai
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: command
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# ~/.config/tmuxinator/my_project.yml
+
+windows:
+  - my_window:
+      # layout: "main-vertical"
+      layout: b355,188x47,0,0{153x47,0,0,0,34x47,154,0[34x13,154,0,3,34x33,154,14,4]}
+      # main-pane-width: 70
+      panes:
+        - left_pane:
+            - sleep 0.1 && xdotool key --clearmodifiers "Control+a"; xdotool key --clearmodifiers "Tab"; clear
+        - right_pane_top:
+            - taskwarrior-tui -r todays-focus
+        - right_pane_middle:
+            - taskwarrior-tui -r today
+          # - cbonsai -li
+  - Week_View:
+      layout: d167,189x40,0,0{50x40,0,0[50x9,0,0,1,50x30,0,10,13],90x40,51,0,6,47x40,142,0,7}
+      panes:
+        - taskwarrior-tui -r todays-focus
+        - taskwarrior-tui -r today
+        -
+        - taskwarrior-tui -r this_week
+  - Upcoming_view:
+      layout: b3e0,189x41,0,0{152x41,0,0[152x25,0,0,2,152x15,0,26{55x15,0,26,9,50x15,56,26,10,45x15,107,26,11}],36x41,153,0[36x25,153,0,12,36x15,153,26,14]}
+      panes:
+        -
+        - taskwarrior-tui -r this_week
+        - taskwarrior-tui -r next_week
+        - taskwarrior-tui -r this_month
+        - taskwarrior-tui -r not_planned
+        - taskwarrior-tui -r next_month
+      #
+      #
+      #
+      #
+      #
+      #
+# windows:
+#   - my_window:
+#       layout: "main-vertical"
+#       main-pane-width: 60
+#       panes:
+#         - left_pane
+#         - right_pane_top
+#         - right_pane_middle
+#         - right_pane_bottom
+# windows:
+#   - editor:
+#       layout: main-vertical
+#       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+#       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+#       # synchronize: after
+#       panes:
+#         - xdotool_key_sender:
+#             - export TMUX_PREFIX="Control+a"
+#             - xdotool key --clearmodifiers "$TMUX_PREFIX"; xdotool key --clearmodifiers "Tab"; clear
+#         - hi: tmux split -v -p 20
+#   - server: bundle exec rails s
+#   - logs: tail -f log/development.log
